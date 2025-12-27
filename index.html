@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Alex Banza</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px 40px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            color: #1e3a8a;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #2563eb;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        p, li {
+            line-height: 1.6;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .section {
+            margin-top: 20px;
+        }
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .info-table td {
+            padding: 5px 10px;
+            vertical-align: top;
+        }
+        .experience-list, .competence-list, .langues-list, .etudes-list {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: right;
+            font-style: italic;
+        }
+        .apropos {
+            background-color: #e6f0ff;
+            padding: 15px;
+            border-left: 5px solid #2563eb;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #1e3a8a;
+        }
+        /* Détails des études cachés par défaut */
+        #etudes-detailles {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Curriculum Vitae</h1>
+
+        <!-- Section À propos de moi -->
+        <div class="section apropos">
+            <h2>À propos de moi</h2>
+            <p>Je suis Alex Banza, un jeune professionnel motivé et passionné par l'informatique appliquée à la gestion. Rigoureux, organisé et désireux de contribuer efficacement dans le domaine de la comptabilité et de la gestion des entreprises, je possède également des compétences solides en informatique et en analyse de données.</p>
+        </div>
+
+        <!-- I. Identité -->
+        <div class="section">
+            <h2>I. Identité</h2>
+            <table class="info-table">
+                <tr><td><strong>Nom :</strong></td><td>BANZA</td></tr>
+                <tr><td><strong>Post nom :</strong></td><td>WA BANZA</td></tr>
+                <tr><td><strong>Prénom :</strong></td><td>Alex</td></tr>
+                <tr><td><strong>Sexe :</strong></td><td>Masculin</td></tr>
+                <tr><td><strong>Lieu et date de naissance :</strong></td><td>Lubumbashi, le 29/06/2001</td></tr>
+                <tr><td><strong>État civil :</strong></td><td>Célibataire</td></tr>
+                <tr><td><strong>Nationalité :</strong></td><td>Congolaise</td></tr>
+                <tr><td><strong>Adresse :</strong></td><td>N°1964, Av/Isiro, Q/ Bel air, C/ Kampemba</td></tr>
+                <tr><td><strong>Téléphone :</strong></td><td>+243 976 255 539 / +243 830 035 889</td></tr>
+            </table>
+        </div>
+
+        <!-- II. Études -->
+        <div class="section">
+            <h2>II. Études faites</h2>
+            <button onclick="toggleEtudes()">Afficher / Masquer les études détaillées</button>
+            <ul class="etudes-list" id="etudes-detailles">
+                <li><strong>Études primaires :</strong> Complexe Scolaire Saint François — Certificat études primaires</li>
+                <li><strong>Études secondaires :</strong> Institut Nyundwe — Diplôme d’État en pédagogie</li>
+                <li><strong>Études universitaires :</strong> Institut Supérieur de Statistiques (I.S.S) — Licence en informatique appliquée à la gestion des entreprises</li>
+            </ul>
+        </div>
+
+        <!-- III. Expériences professionnelles -->
+        <div class="section">
+            <h2>III. Expériences professionnelles</h2>
+            <ul class="experience-list">
+                <li>Stage à l’INPP de Lubumbashi en 2024</li>
+                <li>Stage à l’INPP en 2023</li>
+                <li>Stage à la SNCC en 2022</li>
+            </ul>
+        </div>
+
+        <!-- IV. Compétences -->
+        <div class="section">
+            <h2>IV. Compétences</h2>
+            <ul class="competence-list">
+                <li>Tenue de la comptabilité</li>
+                <li>Effectuer les opérations de caisse</li>
+                <li>Effectuer le call-over de caisse</li>
+                <li>Effectuer des grands comptages monétaires</li>
+                <li>Connaissances en informatique</li>
+            </ul>
+        </div>
+
+        <!-- V. Langues parlées -->
+        <div class="section">
+            <h2>V. Langues parlées</h2>
+            <ul class="langues-list">
+                <li>Français</li>
+                <li>Swahili</li>
+                <li>Anglais</li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            Je certifie sur mon honneur que les informations fournies ci-haut sont sincères et exactes.<br>
+            Fait à Lubumbashi, le …/…/2025<br>
+            <strong>BANZA WA BANZA Alex</strong>
+        </div>
+    </div>
+
+    <script>
+        function toggleEtudes() {
+            const etudes = document.getElementById('etudes-detailles');
+            etudes.style.display = (etudes.style.display === 'none' || etudes.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
